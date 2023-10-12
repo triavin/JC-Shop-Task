@@ -21,11 +21,11 @@ public class LoginTest {
         login = new Login();
     }
 
-    @AfterClass
-    public void finish(){
-        DriverSingleton.delay(Constants.SORTDELAY);
-        DriverSingleton.closeObjectInstance();
-    }
+//    @AfterClass
+//    public void finish(){
+//        DriverSingleton.delay(Constants.SORTDELAY);
+//        DriverSingleton.closeObjectInstance();
+//    }
 
     // Negative Test
     @Test(priority = 1)

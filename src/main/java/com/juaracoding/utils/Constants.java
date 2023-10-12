@@ -9,7 +9,7 @@ public class Constants {
     public static final long TIMEOUT = 10;
     public static final long SORTDELAY = 2;
     public static final long LONGDELAY = 5;
-    public static final String USERNAME = "Aldi";
+    public static final String USERNAME = "tesUser6801";
     public static final String EMAIL = "aldi2@gmail.com";
-    public static final String PASSWORD = "alt+F4!";
+    public static final String PASSWORD = "altShift+F4!";
 }

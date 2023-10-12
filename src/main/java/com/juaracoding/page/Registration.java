@@ -19,14 +19,8 @@ public class Registration {
     private WebElement email;
     @FindBy(xpath = "//input[@id='reg_password']")
     private WebElement password;
-    @FindBy(xpath = "//input[@id='reg_password']")
+    @FindBy(xpath = "//button[@name='register']")
     private WebElement regisBtn;
-    @FindBy(xpath = "//input[@id='reg_password']")
-    private WebElement url;
-    @FindBy(xpath = "//h2[normalize-space()='Register']")
-    private WebElement regisHeader;
-    @FindBy(xpath = "//form[@class='woocommerce-form woocommerce-form-register register']")
-    private WebElement regisForm;
 
 
 
@@ -40,8 +34,9 @@ public class Registration {
     }
 
     // Registration
-    public void regisData(String username, String password){
+    public void regis(String username, String password, String email){
         this.username.sendKeys(username);
+        this.email.sendKeys(email);
         this.password.sendKeys(password);
         regisBtn.click();
     }
@@ -54,8 +49,8 @@ public class Registration {
             jse.executeScript("window.scrollBy(0,500)");
             System.out.println("Scroll Down page by 500px");
         } else {
-            jse.executeScript("window.scrollBy(0,550)");
-            System.out.println("Scroll Down page by 550px");
+            jse.executeScript("window.scrollBy(0,600)");
+            System.out.println("Scroll Down page by 600px");
         }
 
 

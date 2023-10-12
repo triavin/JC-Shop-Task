@@ -36,5 +36,6 @@ public class AddProductTest {
 
         addProduct.findProduct();
         addProduct.addToCart();
+        System.out.println("Barang berhasil ditambahkan ke keranjang.");
     }
 }
